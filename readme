@@ -1,0 +1,60 @@
+
+
+// Sample Mutation records
+
+mutation{
+  addCoin(
+    	name:"Wanchain", 
+    	tickerSymbol:"WAN",
+    	tickerImage:"NONE"
+  		icoUSDPrice:"0.40",
+  		icoETHPrice:"0.00004",
+  		icoBTCPrice:"0.0000003",
+  		icoTotalUSDRaised:"36,000,000",
+  		icoDate:"05/20/2017"){
+    		name
+    		tickerSymbol
+    		tickerImage
+    		icoUSDPrice
+    		icoETHPrice
+    		icoBTCPrice
+    		icoTotalUSDRaised
+    		icoDate
+        }
+    }
+}
+
+
+//view a particular record
+{
+  coin(id:"5c6377177aa228edf4995693"){
+    		name
+    		tickerSymbol
+    		tickerImage
+    		icoUSDPrice
+    		icoETHPrice
+    		icoBTCPrice
+    		icoTotalUSDRaised
+    		icoDate
+    }
+}
+
+
+//view all records
+
+{
+  coins{
+    		name
+    		tickerSymbol
+    		tickerImage
+    		icoUSDPrice
+    		icoETHPrice
+    		icoBTCPrice
+    		icoTotalUSDRaised
+    		icoDate
+  }
+
+}
+
+
+
